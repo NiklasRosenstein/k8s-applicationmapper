@@ -1,4 +1,4 @@
-FROM python:3.13-alpine
+FROM python:3.14-alpine
 COPY --from=ghcr.io/astral-sh/uv:0.12.10 /uv /uvx /bin/
 COPY --from=alpine/helm:4.2.4 /usr/bin/helm /bin/
 WORKDIR /app

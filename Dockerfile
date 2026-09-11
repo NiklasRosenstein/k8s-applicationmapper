@@ -1,5 +1,5 @@
 FROM python:3.13-alpine
-COPY --from=ghcr.io/astral-sh/uv:0.12.10 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.12.13 /uv /uvx /bin/
 COPY --from=alpine/helm:4.2.4 /usr/bin/helm /bin/
 WORKDIR /app
 COPY pyproject.toml README.md *.py uv.lock /app
